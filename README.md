@@ -51,4 +51,5 @@ El resto de actores podrán solamente acceder a la información del partido, ten
 
 ### Diagrama casos de uso
 
+![Diagrama inicial drawio](https://github.com/user-attachments/assets/aff375c6-7172-4ca8-98b2-aec6a2963349)
 
