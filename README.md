@@ -53,3 +53,152 @@ El resto de actores podrán solamente acceder a la información del partido, ten
 
 ![Diagrama inicial drawio](https://github.com/user-attachments/assets/aff375c6-7172-4ca8-98b2-aec6a2963349)
 
+### Actores
+
+|  Actor | Federación  |
+|---|---|
+| Descripción  | Miembro de la federación de voleibol |
+| Características  | Tienen altos permisos en la app |
+| Relaciones |   |
+| Referencias | Borrar equipo, crear liga, borar liga, gestionar liga, ver partidos |   
+|  Notas |  _Notas adicionales_ |
+| Autor  | prorix |
+|Fecha | 11.11.24 |
+
+|  Actor | Árbitro  |
+|---|---|
+| Descripción  | Cuerpo del arbitraje de las ligas |
+| Características  | Tiene los permisos necesarios para gestionar un partido |
+| Relaciones | Entrenador  |
+| Referencias | Registrar datos partido, iniciar partido, finalizar partido, abrir disponibilidad de añadir rotaciones iniciales, ver datos avanzados de los partidos, ver partidos |   
+|  Notas |  _Notas adicionales_ |
+| Autor  | prorix |
+|Fecha | 11.11.24 |
+
+|  Actor | Entrenador  |
+|---|---|
+| Descripción  | Creador de equipos de voleibol |
+| Características  | Puede crear equipos y tener pequeños permisos en los partidos |
+| Relaciones | Arbitro |
+| Referencias | Registrar rotación inicial, crear equipo, ver partidos |   
+|  Notas |  _Notas adicionales_ |
+| Autor  | prorix |
+|Fecha | 11.11.24 |
+
+|  Actor | Usuario  |
+|---|---|
+| Descripción  | Usuario común de la app |
+| Características  | Usuario sin permisos de la app |
+| Relaciones |  |
+| Referencias | ver partidos |   
+|  Notas |  _Notas adicionales_ |
+| Autor  | prorix |
+|Fecha | 11.11.24 |
+
+
+### Casos de uso
+
+|  Caso de Uso	CU | Borrar equipo  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Federación |
+  | Descripción | Borra un equipo que no deba existir más |
+  | Flujo básico | 1. Acceder al menú de administración, 2. Localizar el equipo, 3. Rellenar el formulario de eliminación.  |
+  | Pre-condiciones | El equipo debe ser eliminado con motivos justificantes. |  
+  | Post-condiciones  | El equipo es eliminado de todas las ligas y competencias a las que pertenece |  
+  |  Requerimientos | No se puede eliminar un equipo sin motivo aparente. |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Crear liga  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Federación |
+  | Descripción | Se crea una nueva liga |
+  | Flujo básico | 1. Acceder al menú de administración, 2. Rellenar el formulario de creación de liga. |
+  | Pre-condiciones | Se necesita una liga nueva |  
+  | Post-condiciones  | La liga se añade al sistema |  
+  |  Requerimientos | La liga debe tener inicialmente al menos 5 equipos |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Borrar liga  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Federación |
+  | Descripción | Se borra una liga |
+  | Flujo básico | 1. Acceder al menú de administración, 2. Rellenar el formulario de eliminación de liga. |
+  | Pre-condiciones | Se necesita eliminar una liga |  
+  | Post-condiciones  | La liga se elimina del sistema |  
+  |  Requerimientos | La liga debe tener menos de 8 equipos |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Gestionar liga  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Federación |
+  | Descripción | Gestión general de la liga (Añadir equipos, quitarlos, etc.) |
+  | Flujo básico | 1. Acceder al menú de administración, 2. Acceder a la liga, 3. Acceder al sistema de gestión. |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | Se efectúan los cambios realizados |  
+  |  Requerimientos |  |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Registrar datos partido  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Árbitro |
+  | Descripción | Se añaden datos a tiempo real del partido que se está gestionando |
+  | Flujo básico | 1. Acceder al menú de gestión de partido con el código de uso único, 2. Registrar los datos necesarios. |
+  | Pre-condiciones | Se está jugando un partido |  
+  | Post-condiciones  |  |  
+  |  Requerimientos |  |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Iniciar partido  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Árbitro |
+  | Descripción | Un partido se da por iniciado en la APP |
+  | Flujo básico | 1. Acceder al menú de gestión de partido con el código de uso único, 2. Iniciar el partido. |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | EL partido se inicia |  
+  |  Requerimientos | Debe ser la hora acordada para el partido |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Finalizar partido  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Árbitro |
+  | Descripción | Un partido se da por finalizado en la APP |
+  | Flujo básico | 1. Acceder al menú de gestión de partido con el código de uso único, 2. Finalizar el partido. |
+  | Pre-condiciones | El partido está iniciado |  
+  | Post-condiciones  | El partido se finaliza |  
+  |  Requerimientos | El partido debe haber acabado |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Abrir disponibilidad de añadir rotaciones iniciales  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Árbitro |
+  | Descripción | Se añaden datos a tiempo real del partido que se está gestionando |
+  | Flujo básico | 1. Acceder al menú de gestión de partido con el código de uso único, 2. Iniciar el modo DARI (Disponible para Añadir Rotaciones Iniciales). |
+  | Pre-condiciones | Se está jugando un partido |  
+  | Post-condiciones  |  |  
+  |  Requerimientos |  |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
