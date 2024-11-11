@@ -202,3 +202,44 @@ El resto de actores podrán solamente acceder a la información del partido, ten
   | Autor  | prorix |
   |Fecha | 11.11.24 |
 
+  |  Caso de Uso	CU | Finalizar partido  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Ver datos avanzados partido |
+  | Descripción | Se accede a la información con detalles de ambos equipos en un partido a tiempo real |
+  | Flujo básico | 1. Acceder al menú de gestión de partido con el código de uso único. |
+  | Pre-condiciones |  |  
+  | Post-condiciones  |  |  
+  |  Requerimientos | El partido debe existir |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Crear equipo  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Entrenador |
+  | Descripción | Se crea un nuevo equipo desde cero |
+  | Flujo básico | 1. Acceder al menú de creación de equipo, 2. Rellenar el formulario de creación de un equipo nuevo. |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | Se añade el equipo nuevo a la base de datos de equipos registrados |  
+  |  Requerimientos |  |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  |  Caso de Uso	CU | Ver partidos  |
+  |---|---|
+  | Fuentes  | _Documento que sustenta el caso de uso_  |
+  | Actor  | Todos |
+  | Descripción | Se visualiza la información básica de un partido pasado o a tiempo real |
+  | Flujo básico | 1. Acceder al partido en la página principal de la APP |
+  | Pre-condiciones |  |  
+  | Post-condiciones  |  |  
+  |  Requerimientos |  |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | prorix |
+  |Fecha | 11.11.24 |
+
+  
+
