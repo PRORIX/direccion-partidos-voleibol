@@ -47,3 +47,8 @@ El resto de actores podrán solamente acceder a la información del partido, ten
 
 #### Usuario
 <li>Ver partidos</li>
+
+
+### Diagrama casos de uso
+
+
